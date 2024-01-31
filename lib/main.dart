@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty_app/login/login_injection.dart';
 
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+import 'package:rick_and_morty_app/firebase_options.dart';
+
+import 'package:rick_and_morty_app/login/login_injection.dart';
+import 'package:rick_and_morty_app/themes/dark_theme.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  try {
+    await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform);
+  } catch (e) {
+    print('Error al inicializar Firebase: $e');
+  }
+
   runApp(const MyApp());
 }
 
@@ -13,8 +26,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData.dark(),
       home: LoginInjection.injection(),
+      theme: darkTheme,
     );
   }
 }
