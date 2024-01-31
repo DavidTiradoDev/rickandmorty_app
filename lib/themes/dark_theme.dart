@@ -15,7 +15,7 @@ final ThemeData darkTheme = ThemeData.dark().copyWith(
     ),
     enabledBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: Color(0xFF7BD3EA),
+        color: Colors.black,
       ),
       borderRadius: BorderRadius.all(
         Radius.circular(
@@ -25,7 +25,7 @@ final ThemeData darkTheme = ThemeData.dark().copyWith(
     ),
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: Color(0xFF7BD3EA),
+        color: Colors.black,
       ),
       borderRadius: BorderRadius.all(
         Radius.circular(
@@ -35,7 +35,7 @@ final ThemeData darkTheme = ThemeData.dark().copyWith(
     ),
     border: OutlineInputBorder(
       borderSide: BorderSide(
-        color: Color(0xFF7BD3EA),
+        color: Colors.black,
       ),
       borderRadius: BorderRadius.all(
         Radius.circular(

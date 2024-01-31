@@ -11,7 +11,7 @@ class LoginInjection {
   static Widget injection() {
     return ListenableProvider(
       create: (context) => LoginProvider(),
-      child: const LoginScreen(),
+      child: LoginScreen(),
     );
   }
 }
