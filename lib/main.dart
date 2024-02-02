@@ -4,7 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:rick_and_morty_app/firebase_options.dart';
 
 import 'package:rick_and_morty_app/login/login_injection.dart';
-import 'package:rick_and_morty_app/themes/dark_theme.dart';
+import 'package:rick_and_morty_app/common/dark_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

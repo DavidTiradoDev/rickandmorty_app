@@ -59,6 +59,8 @@ class LoginScreen extends StatelessWidget {
                     height: 15,
                   ),
                   TextFormField(
+                    cursorColor: Colors.black,
+                    style: const TextStyle(color: Colors.black),
                     controller: emailController,
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
@@ -72,6 +74,8 @@ class LoginScreen extends StatelessWidget {
                     height: 15,
                   ),
                   TextFormField(
+                    cursorColor: Colors.black,
+                    style: const TextStyle(color: Colors.black),
                     controller: passwordController,
                     obscureText: true,
                     decoration: InputDecoration(
